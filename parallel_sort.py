@@ -29,7 +29,6 @@ def parallel_sort(lista, n_threads=20):
 
     for index, thread in enumerate(threads):
         thread.join()
-    print(time())
 
     
     while(len(listas) > 1):
@@ -39,8 +38,3 @@ def parallel_sort(lista, n_threads=20):
 
 
     
-desordenado = [randint(0,2345976) for _ in range(499999)]
-t = time()
-print(t)
-x = parallel_sort(desordenado)
-print(time())
